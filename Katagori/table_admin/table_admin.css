@@ -1,0 +1,126 @@
+.table-container {
+    
+    max-width: 100%;
+    margin: auto;
+    background-color: #0d3b66; /* Warna biru gelap */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Warna teks putih */
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    display: flex;
+}
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+}
+
+thead th {
+    text-align: center;
+    padding: 15px;
+    background-color: #00509e; /* Warna biru */
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 18px;
+    
+}
+
+tbody td {
+    padding: 15px;
+    border-top: 1px solid #00509e;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #12263f; /* Biru gelap */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #1c3b57; /* Biru lebih terang */
+}
+
+a.edit-button, a.delete-button {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+a.edit-button {
+    background-color: #ffaa00; /* Kuning */
+    color: #fff;
+    margin-right: 2rem;
+    
+}
+
+a.delete-button {
+    background-color: #d90429; /* Merah */
+    color: #fff;
+}
+
+a.edit-button:hover, a.delete-button:hover {
+    opacity: 0.8;
+}
+
+.add-items {
+
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+    margin-bottom: 2rem;
+    
+}
+
+.btn-tambahs {
+    margin-left: 4.5rem;
+    background-color:#003366 ;
+    color: white;
+    border: 1px solid #0049a3;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: monospace;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+    
+}
+
+.btn-tambahs:hover {
+    border-color: #007bff;
+    background-color: #00448d;
+}
+
+.btn-tambahss {
+    
+    background-color:#003366 ;
+    color: white;
+    border: 1px solid #0049a3;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: monospace;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+    
+    
+}
+
+.btn-tambahss:hover {
+    border-color: #007bff;
+    background-color: #00448d;
+}

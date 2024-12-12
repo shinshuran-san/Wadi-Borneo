@@ -1,0 +1,206 @@
+
+.posisi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        height: 40rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .posisis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15rem;
+        margin-bottom: -20rem;
+        height: 40rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+/* Left section styling */
+.left-section {
+    text-align: center;
+    margin-left: 25rem;
+}
+
+.left-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+}
+
+.left-section p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+.input {
+    
+    margin-left: 20rem;
+    margin-bottom: -15rem;
+    top: 50%;
+    left: 600px;
+    transform: translate(-30%, -50%);
+    background: #00030550;
+    padding: 40px 50px;
+    width: 500px;
+    box-shadow: 0px 0px 25px 10px #1c406b;
+    border-radius: 15px;
+}
+
+.input h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    padding-top: 0;
+    margin-top: -20px;
+}
+
+.box-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 2px solid white;
+    padding: 8px 0;
+}
+
+.box-input i {
+    font-size: 23px;
+    color: white;
+    padding: 5px 0;
+}
+
+.box-input input {
+    width: 85%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.box-input input::placeholder {
+    color: white;
+}
+
+.btn-input .box-input input:hover {
+    background: rgba(10, 10, 10, s 0.5);
+}
+
+.btn-input {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid white;
+    width: 92.5%;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.btn-input:hover {
+    background: black
+}
+
+.bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+
+.bottom p {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom a {
+    color: lightgreen;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query untuk Desktop Lebar (di atas 992px) */
+@media (min-width: 992px) {
+    .posisi {
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .left-section {
+        margin-left: 10rem;
+        text-align: center;
+    }
+
+    .input {
+        margin-right: 0;
+    }
+}
+
+/* Media Query untuk Tablet (768px - 991px) */
+@media (max-width: 991px) {
+    .posisi {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 30px;
+    }
+
+    .input {
+        width: 80%;
+    }
+}
+
+/* Media Query untuk Ponsel (di bawah 768px) */
+@media (max-width: 767px) {
+    .left-section h1 {
+        font-size: 24px;
+    }
+
+    .left-section p {
+        font-size: 14px;
+    }
+
+    .input {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input h1 {
+        font-size: 20px;
+    }
+
+    .box-input input {
+        font-size: 16px;
+    }
+
+    .btn-input {
+        font-size: 16px;
+    }
+}

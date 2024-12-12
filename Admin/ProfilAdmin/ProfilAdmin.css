@@ -1,0 +1,344 @@
+
+
+.posisi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #0052afc5;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+    position: relative;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+
+.sidebar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(15, 42, 86, 0) 0%, rgba(15, 42, 86, 0.8) 60%, rgba(15, 42, 86, 1) 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar ul li {
+    width: 90%;
+    padding: 12px 20px;
+    color: #66A1F2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+    border: 1px solid #66A1F2;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.sidebar ul li:hover {
+    background-color: #0f7cf8;
+    color: #FFFFFF;
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #66A1F2;          /* Ubah warna teks menjadi putih */
+    display: flex;         /* Gunakan Flexbox untuk tata letak */
+    align-items: center;   /* Rata tengah ikon dengan teks */
+}
+
+.sidebar ul li a .icon {
+    margin-right: 10px; /* Tambahkan jarak antara ikon dan teks */
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff; /* Warna teks saat di-hover (opsional) */
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.containers {
+    background-color: #1e69b0bd;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containers h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+}
+
+.warning-message {
+    background-color: #FFDDDD;
+    color: #D8000C;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.data-akun-box {
+    background-color: #0F2A56;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-akun {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+
+.form {
+    flex-grow: 1;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.form p {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+    color: #333;
+    font-size: 14px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-input span {
+    background-color: #FFFFFF;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.phone-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.back-button, .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.back-button {
+    background-color: #102A49;
+    color: #FFFFFF;
+}
+
+.save-button {
+    background-color: #57A4EF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-button::before {
+    content: "\1F4E4";
+    font-size: 16px;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.photo-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Bentuk lingkaran */
+    object-fit: cover; /* Sesuaikan gambar agar tidak terdistorsi */
+    cursor: pointer; /* Pointer menunjukkan bisa diklik */
+    border: 2px solid #ddd; /* Tambahkan border opsional */
+}
+
+.photo-icon img:hover {
+    border-color: #007bff; /* Ubah warna border saat hover */
+    transition: 0.3s ease-in-out;
+}
+
+
+
+@media (min-width: 2560px) { /* 30-inch screen */
+    .sidebar {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .containers {
+        max-width: 1000px;
+    }
+
+    .form label {
+        font-size: 16px;
+    }
+
+    .back-button, .save-button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .containers {
+        width: 90%;
+        max-width: 500px;
+        margin: 2rem auto;
+    }
+
+    .data-akun-box {
+        padding: 15px;
+    }
+
+    .profile-pic img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Responsive Adjustments for Mobile Phones */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 15px;
+    }
+
+    .containers {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 1rem auto;
+    }
+
+    .data-akun {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form label {
+        font-size: 12px;
+    }
+
+    .back-button, .save-button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .sidebar ul li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .containers h2 {
+        font-size: 20px;
+    }
+}

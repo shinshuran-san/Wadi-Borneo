@@ -1,0 +1,96 @@
+.user-game-id {
+    width: 30%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #0b3b70;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -3px 15px 3px #153761; 
+    
+    
+    
+    
+}
+
+.faq-header {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.faq-header h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 0px;
+    font-family: monospace;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+}
+
+.save-button {
+    color: red;
+    font-size: 20px;
+    margin-left: 11rem;
+    margin-top: -1rem;
+    text-align: center;
+    white-space: pre;
+    font-family: monospace;
+    border: 6px solid #000d1a; 
+    padding: 1px;
+    border-radius: 15px;
+    background-color: #000d1a;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.save-button:hover {
+    color: white; /* Teks berubah menjadi putih */
+    background-color: #002451; /* Background berubah menjadi biru tua */
+    border-color: #0052af; /* Border berubah menjadi biru muda */
+}
+
+.user-game-id h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+.user-game-id form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.user-game-id label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.user-game-id input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.user-game-id input:focus {
+    border-color: #0056b3;
+}
+
+.user-game-id p {
+    font-size: 0.9rem;
+    color: #d1e0f2;
+    line-height: 1.5;
+}
+

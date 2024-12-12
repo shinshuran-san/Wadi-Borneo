@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #00274e, #00336646);
+}
+
+header {
+    background: linear-gradient(90deg, #011b35, #0b2055);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 -3px 15px 3px #2c63a7;
+    font-size: 20px; 
+    font-family: monospace;
+}
+
+header .logo h1 {
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+    font-size: 24px;
+    margin: 5;
+    text-align: center;
+    white-space: pre;
+    font-style: italic;
+    
+    padding: 1px;
+    border-radius: 20px;
+    
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* Agar border menggunakan posisi relatif */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+header nav a:hover {
+    border: 2px solid #0052af; /* Biru muda (light blue) */
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #002451;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #011b35;
+    box-shadow: 0 0px 7px 1px #1c406b; 
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 1;
+    margin-top: 1rem;
+    
+}
+
+/* Dropdown menu items */
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #002451;
+    color: #fff;
+    border: 2px solid #0052af; /* Biru muda (light blue) */
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.banner {
+    width: 100%;
+    height: 200px;
+    
+     
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #003366;
+    
+    padding: 20px;
+    border: 40px solid #0B2438;
+    
+}
+
+
+.text-content {
+    width: 55%;
+    margin-left: 12rem;
+    margin-top: 2.5rem;
+}
+
+.text-content h2 {
+    color: rgb(1, 199, 1);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 850;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+}
+
+.text-content h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.text-content p {
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 8rem;
+    font-style: italic;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.text-content h4 {
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 8rem;
+    color: #ffffff;
+}
+
+.image-content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    padding: 15px;
+    max-width: 500px;
+    max-height: 400px;
+    margin-right: 10rem;
+    margin-top: 1rem;
+}
+
+.product-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-list h4 {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.product-list ul {
+    list-style: none;
+}
+
+.product-list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact {
+    
+    background-color: #002451;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+    margin-top: auto; /* Memastikan kontak selalu di bagian bawah */
+    box-shadow: 0 -3px 15px 3px #1c406b; 
+    
+}
+
+.contact h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 15.5rem;
+}
+
+.contact h4 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-left: 15.5rem;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    margin-left: 15.5rem;
+    color:white;
+    
+}
+
+.contact p::after {
+    content: "";
+    position: absolute;
+    left: 16.5rem;
+    bottom: 2;
+    margin-top: 1.2rem;
+    width: 35%; /* Panjang garis, sesuaikan sesuai keinginan */
+    height: 2px; /* Ketebalan garis */
+    background-color: rgb(169, 167, 167);
+    
+}
+
+.map {
+    display: flex;
+    padding: 20px;
+    margin-left: 57rem;
+    margin-top: -13rem;
+}
+iframe {
+    width: 70%;
+    height: 200px;
+    border: 0;
+}
+
+
+/* Responsif untuk Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header nav a {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .text-content {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .image-content {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .product-list {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact h3, .contact h4, .contact p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact p::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
+}
+
+/* Responsif untuk Ponsel (max-width: 480px) */
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 18px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .banner {
+        height: 150px;
+    }
+
+    .text-content h2 {
+        font-size: 15px;
+    }
+
+    .text-content h3 {
+        font-size: 20px;
+    }
+
+    .text-content p,
+    .text-content h4 {
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    .image-content img {
+        max-width: 200px;
+    }
+
+    .product-list {
+        margin: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact h3, .contact h4, .contact p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact p::after {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.border {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom, bukan baris */
+    justify-content: center;
+    margin: 5rem auto; /* Center horizontally with auto */
+    padding: 10px;
+    border: 1px solid #003572;
+    max-width: 1300px;
+    height: 500px;
+    box-shadow: 0 0 15px #0052af;
+    text-align: center;
+    background-color: #0052afcf;
+}
+
+.border p {
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    font-style: italic;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.border h2 {
+    color: rgb(1, 199, 1);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 850;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+    /* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+    -webkit-background-clip: text;
+
+    /* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 20px; /* Menambahkan margin bawah agar ada jarak dengan elemen di bawahnya */
+}
+
+.border h3 {
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+

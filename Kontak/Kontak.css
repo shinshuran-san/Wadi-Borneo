@@ -1,0 +1,182 @@
+a {
+    color: white; 
+    text-decoration: none; 
+}
+
+a:hover {
+    cursor: grab;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+    
+}
+
+.container h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* Memperbesar lebar maksimal */
+    margin: 0 auto;
+    padding: 0 10px; /* Memberi padding untuk mengatur jarak dari tepi layar */
+}
+    
+
+.info {
+    text-align: left;
+    margin-bottom: 10rem;
+}
+
+.info p {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-right: 4rem;
+}
+
+.info-text {
+    color: #ffffff; /* Mengubah warna teks menjadi hitam */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.opening-hours {
+    position: relative;
+    margin-bottom: 10rem;
+    position: relative;
+    display: inline-block;
+}
+  
+  .shadow-box {
+    position: absolute;
+    top: 1px; /* Adjust for shadow offset */
+    left: -5px; /* Adjust for shadow offset */
+    width: calc(80% + 15px); /* Slightly larger than red box */
+    height: calc(80% + 35px); /* Slightly larger than red box */
+    background-color: rgb(31, 1, 1); /* Shadow color */
+    border-radius: 20px; /* Match red box's border radius */
+  }
+
+.hours-box {
+    background-color:rgb(224, 33, 33);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Mengatur lebar maksimum */
+    min-width: 350px; /* Mengatur lebar minimum agar kotak lebih besar */
+    max-height: 300px;
+    min-height: 150px;
+    margin-right: 5rem;
+    transform: rotate(-6deg);
+}
+
+.hours-box p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transform: rotate(6deg);
+}
+
+.hours-text {
+    color: #000; /* Mengubah warna teks menjadi hitam */
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .hours-box {
+        padding: 20px 40px;
+        max-width: 280px;
+        min-width: 220px;
+    }
+}
+
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .info p {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .hours-box {
+        max-width: 300px;
+        min-width: 250px;
+        padding: 15px 20px;
+        transform: rotate(0); /* Hilangkan rotasi agar lebih rapi di layar kecil */
+    }
+
+    .hours-box p {
+        font-size: 20px;
+    }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        font-size: 16px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hours-box {
+        max-width: 250px;
+        min-width: 200px;
+        padding: 10px 15px;
+        transform: rotate(0); /* Hilangkan rotasi */
+        border-radius: 8px;
+    }
+
+    .hours-box p {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .shadow-box {
+        top: 0;
+        left: -2px;
+        width: calc(100% + 4px); /* Sesuaikan agar lebih lebar pada layar kecil */
+        height: calc(100% + 4px); /* Sesuaikan agar lebih tinggi pada layar kecil */
+    }
+}

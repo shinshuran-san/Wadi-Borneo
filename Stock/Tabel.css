@@ -1,0 +1,149 @@
+/* Kontainer Utama */
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 5rem auto;
+}
+
+/* Kolom Kiri: Daftar Kategori */
+.faq-category,
+.faq-data {
+    flex-basis: 60%;
+    max-width: 700px;
+    flex-grow: 1;
+    background-color: #102841;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(114, 184, 225, 0.5);
+}
+
+/* Header */
+.faq-header {
+    background-color: #0a2238;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-header h2 {
+    font-size: 18px;
+    background: linear-gradient(90deg, #ff0004, #ebff00, #ffaa06);
+
+	/* memastikan bahwa gradasi hanya mempengaruhi area teks. */
+	-webkit-background-clip: text;
+
+	/* membuat teks transparan sehingga latar belakang gradien muncul pada teks. */
+	-webkit-text-fill-color: transparent;
+    font-family: monospace;
+}
+
+/* Daftar dan Item */
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.faq-item {
+    padding: 15px 20px;
+    background-color: #163a57;
+    border-top: 1px solid #0a2238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item:first-child {
+    border-top: none;
+}
+
+.faq-item:hover {
+    background-color: #1e4e6f;
+}
+
+/* Tombol Simpan */
+.save-button {
+    color: red;
+    font-size: 20px;
+    margin-left: auto;
+    
+    text-align: center;
+    font-family: monospace;
+    border: 6px solid #000d1a;
+    padding: 1px;
+    border-radius: 15px;
+    background-color: #000d1a;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.save-button:hover {
+    color: white;
+    background-color: #002451;
+    border-color: #0052af;
+}
+
+.count {
+    width: 40px;
+    height: 40px;
+    background-color: #102841;
+    color: #72b8e1;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(114, 184, 225, 0.5);
+    border: none;
+}
+
+.button {
+    font-size: 20px;
+    color: #72b8e1;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button:disabled {
+    color: #4a7a8c;
+    cursor: not-allowed;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 95%;
+        margin: 2rem auto;
+    }
+
+    .faq-header h2 {
+        font-size: 16px;
+    }
+
+    .faq-item span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 10px;
+    }
+
+    .faq-header h2 {
+        font-size: 14px;
+    }
+
+    .faq-item {
+        padding: 10px 15px;
+    }
+}
